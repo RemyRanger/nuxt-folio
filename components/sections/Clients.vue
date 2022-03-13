@@ -19,7 +19,7 @@
         <ul class="list-reset">
           <li class="reveal-from-bottom">
             <c-image
-              :src="require('@/assets/images/clients-01.svg')"
+              :src="require('@/assets/images/tech/vuejs.png')"
               alt="Client 01"
               :width="124"
               :height="24"
@@ -27,34 +27,34 @@
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="150">
             <c-image
-              :src="require('@/assets/images/clients-02.svg')"
+              :src="require('@/assets/images/tech/golang.png')"
               alt="Client 02"
-              :width="83"
-              :height="30"
+              :width="124"
+              :height="24"
             />
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="300">
             <c-image
-              :src="require('@/assets/images/clients-03.svg')"
+              :src="require('@/assets/images/tech/openapi.png')"
               alt="Client 03"
-              :width="125"
-              :height="39"
+              :width="124"
+              :height="24"
             />
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="450">
             <c-image
-              :src="require('@/assets/images/clients-04.svg')"
+              :src="require('@/assets/images/tech/postgres.png')"
               alt="Client 04"
-              :width="150"
-              :height="31"
+              :width="124"
+              :height="24"
             />
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="600">
             <c-image
-              :src="require('@/assets/images/clients-05.svg')"
+              :src="require('@/assets/images/tech/git.png')"
               alt="Client 05"
-              :width="113"
-              :height="30"
+              :width="124"
+              :height="24"
             />
           </li>
         </ul>

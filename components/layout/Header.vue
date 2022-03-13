@@ -2,7 +2,6 @@
   <header class="site-header" :class="bottomOuterDivider && 'has-bottom-divider'">
     <div class="container">
       <div class="site-header-inner" :class="bottomDivider && 'has-bottom-divider'">
-        <c-logo />
         <button
           v-if="!hideNav"
           ref="hamburger"
@@ -16,7 +15,7 @@
             <span class="hamburger-inner" />
           </span>
         </button>
-        <nav
+        <!-- <nav
           v-if="!hideNav"
           ref="nav"
           class="header-nav"
@@ -41,20 +40,16 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> -->
       </div>
     </div>
   </header>
 </template>
 
 <script>
-import CLogo from '@/components/layout/partials/Logo.vue'
 
 export default {
   name: 'CHeader',
-  components: {
-    CLogo
-  },
   props: {
     active: Boolean,
     navPosition: {

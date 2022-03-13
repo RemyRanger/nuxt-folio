@@ -5,8 +5,8 @@
         <c-image
           :src="require('@/assets/images/logo.svg')"
           alt="Evelyn"
-          :width="32"
-          :height="32"
+          :width="62"
+          :height="62"
         />
       </NuxtLink>
     </h1>

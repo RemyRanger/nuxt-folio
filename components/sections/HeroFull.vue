@@ -19,17 +19,12 @@
       >
         <div class="hero-content">
           <h1 class="mt-0 mb-12 reveal-from-top" data-reveal-delay="150">
-            Landing template for startups
+            I'm Rémy !
           </h1>
           <div class="container-xs">
             <p class="m-0 mb-32 reveal-from-top" data-reveal-delay="300">
-              Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+              A fullstack software Engineer.
             </p>
-            <div class="reveal-from-top" data-reveal-delay="450">
-              <c-button tag="a" color="primary" href="https://cruip.com/">
-                Pricing and plans
-              </c-button>
-            </div>
           </div>
         </div>
         <div class="hero-figure reveal-from-bottom" data-reveal-delay="600">
@@ -37,8 +32,7 @@
             class="has-shadow"
             :src="require('@/assets/images/hero-image.svg')"
             alt="Hero"
-            :width="896"
-            :height="502"
+            :width="546"
           />
         </div>
       </div>
@@ -48,13 +42,11 @@
 
 <script>
 import { SectionProps } from '@/utils/SectionProps.js'
-import CButton from '@/components/elements/Button.vue'
 import CImage from '@/components/elements/Image.vue'
 
 export default {
   name: 'CHeroFull',
   components: {
-    CButton,
     CImage
   },
   mixins: [SectionProps]
