@@ -29,7 +29,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue-fragment": "^1.5.1",
-    "vue2-touch-events": "^2.0.0"
+    "vue2-touch-events": "^3.2.2"
   },
   "browserslist": [
     "> 1%",
