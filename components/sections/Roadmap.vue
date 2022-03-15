@@ -18,20 +18,26 @@
       >
         <c-section-header :data="sectionHeader" class="center-content" />
         <c-timeline>
-          <c-timeline-item title="November 2019">
-            Deployed a high-quality first release and conducted a market validation test
+          <c-timeline-item title="Décembre 2020">
+            Cadre De Vie - Data provider startup
           </c-timeline-item>
-          <c-timeline-item title="December 2019">
-            Deployed a high-quality first release and conducted a market validation test
+          <c-timeline-item title="Avril 2020">
+            Taktyl - Mobile App for events
           </c-timeline-item>
-          <c-timeline-item title="January 2020">
-            Deployed a high-quality first release and conducted a market validation test
+          <c-timeline-item title="Janvier 2020">
+            HomePlus - HeathCare Services
           </c-timeline-item>
-          <c-timeline-item title="February 2020">
-            Deployed a high-quality first release and conducted a market validation test
+          <c-timeline-item title="Mars 2019">
+            Olympe - Voice drived interface
           </c-timeline-item>
-          <c-timeline-item title="March 2020">
-            Deployed a high-quality first release and conducted a market validation test
+          <c-timeline-item title="Septembre 2018">
+            Ci5 - Cargo Intelligent System
+          </c-timeline-item>
+          <c-timeline-item title="Aout 2018">
+            Graduated Telecom Engineer from ENSEIRB-MATMECA
+          </c-timeline-item>
+          <c-timeline-item title="Janvier 2018">
+            SICS - Battle Management System (internship)
           </c-timeline-item>
         </c-timeline>
       </div>
@@ -56,9 +62,7 @@ export default {
   data () {
     return {
       sectionHeader: {
-        title: 'Product roadmap',
-        paragraph:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        title: 'Experiences'
       }
     }
   }

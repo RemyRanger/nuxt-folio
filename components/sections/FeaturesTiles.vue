@@ -28,19 +28,19 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-01.svg')"
+                    :src="require('@/assets/images/split/frontend.svg')"
                     alt="Feature tile icon 01"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Frontend
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  Widely using VueJs for SPA development, i'm familiar with Angular too. Focusing on JAM stack requirements. Mobile experience with Ionic project.
                 </p>
               </div>
             </div>
@@ -51,19 +51,19 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-02.svg')"
+                    :src="require('@/assets/images/split/backend.svg')"
                     alt="Feature tile icon 02"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Backend
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  Very interrested by Golang development, i'm used to work with Java and NodeJS. API definition first, i love to use Openapi documentation and code generation.
                 </p>
               </div>
             </div>
@@ -74,19 +74,19 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-03.svg')"
+                    :src="require('@/assets/images/split/process.svg')"
                     alt="Feature tile icon 03"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Workflow
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  CI/CD interrested, i'm looking for the best suitable workflow for code release and safe auto-deployment. I'm gitlab lover, scripting and working with pipeline for years !
                 </p>
               </div>
             </div>
@@ -97,19 +97,19 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-04.svg')"
+                    :src="require('@/assets/images/split/security.svg')"
                     alt="Feature tile icon 04"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Cyber-defense
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  Keep libraries updated as much as possible, practicing security basic knowloedge, code optimisation, API protection (Auth, JWT). Using cloudflare as firewall and so much .. :)
                 </p>
               </div>
             </div>
@@ -120,16 +120,16 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-05.svg')"
+                    :src="require('@/assets/images/split/team.svg')"
                     alt="Feature tile icon 05"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Team leader
                 </h4>
                 <p class="m-0 text-sm">
                   A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
@@ -143,16 +143,16 @@
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
                   <c-image
-                    :src="require('@/assets/images/feature-tile-icon-06.svg')"
+                    :src="require('@/assets/images/split/creative.svg')"
                     alt="Feature tile icon 06"
-                    :width="48"
-                    :height="48"
+                    :width="208"
+                    :height="208"
                   />
                 </div>
               </div>
               <div class="features-tiles-item-content">
                 <h4 class="mt-0 mb-8">
-                  Quickly Mastered
+                  Creative Minded
                 </h4>
                 <p class="m-0 text-sm">
                   A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
