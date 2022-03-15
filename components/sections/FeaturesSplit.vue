@@ -40,13 +40,13 @@
               data-reveal-delay="200"
               :class="imageFill && 'split-item-image-fill'"
             >
-              <c-image
+              <img
                 :src="require('@/assets/images/project/cadredevie.png')"
                 class="has-shadow"
                 alt="Features split image 01"
                 :width="328"
                 :height="296"
-              />
+              >
             </div>
           </div>
 
@@ -65,13 +65,13 @@
               data-reveal-delay="200"
               :class="imageFill && 'split-item-image-fill'"
             >
-              <c-image
+              <img
                 :src="require('@/assets/images/project/taktyl.png')"
                 class="has-shadow"
                 alt="Features split image 02"
                 :width="528"
                 :height="396"
-              />
+              >
             </div>
           </div>
 
@@ -114,13 +114,13 @@
               data-reveal-delay="200"
               :class="imageFill && 'split-item-image-fill'"
             >
-              <c-image
+              <img
                 :src="require('@/assets/images/project/homeplus.png')"
                 class="has-shadow"
                 alt="Features split image 03"
                 :width="528"
                 :height="396"
-              />
+              >
             </div>
           </div>
 
@@ -139,13 +139,13 @@
               data-reveal-delay="200"
               :class="imageFill && 'split-item-image-fill'"
             >
-              <c-image
+              <img
                 :src="require('@/assets/images/project/olympe.png')"
                 class="has-shadow"
                 alt="Features split image 02"
                 :width="528"
                 :height="396"
-              />
+              >
             </div>
           </div>
 
@@ -170,13 +170,13 @@
               data-reveal-delay="200"
               :class="imageFill && 'split-item-image-fill'"
             >
-              <c-image
+              <img
                 :src="require('@/assets/images/project/ci5.png')"
                 class="has-shadow"
                 alt="Features split image 03"
                 :width="528"
                 :height="396"
-              />
+              >
             </div>
           </div>
         </div>
@@ -188,13 +188,11 @@
 <script>
 import { SectionSplitProps } from '@/utils/SectionProps.js'
 import CSectionHeader from '@/components/sections/partials/SectionHeader.vue'
-import CImage from '@/components/elements/Image.vue'
 
 export default {
   name: 'CFeaturesSplit',
   components: {
-    CSectionHeader,
-    CImage
+    CSectionHeader
   },
   mixins: [SectionSplitProps],
   data () {

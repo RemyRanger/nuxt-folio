@@ -28,12 +28,12 @@
           </div>
         </div>
         <div class="hero-figure reveal-from-bottom" data-reveal-delay="600">
-          <c-image
+          <img
             class="has-shadow"
             :src="require('@/assets/images/hero-image.svg')"
             alt="Hero"
             :width="546"
-          />
+          >
         </div>
       </div>
     </div>
@@ -42,13 +42,9 @@
 
 <script>
 import { SectionProps } from '@/utils/SectionProps.js'
-import CImage from '@/components/elements/Image.vue'
 
 export default {
   name: 'CHeroFull',
-  components: {
-    CImage
-  },
   mixins: [SectionProps]
 }
 </script>

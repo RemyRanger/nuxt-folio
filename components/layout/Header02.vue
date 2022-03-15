@@ -16,7 +16,7 @@
             <span class="hamburger-inner" />
           </span>
         </button>
-        <nav
+        <!-- <nav
           v-if="!hideNav"
           ref="nav"
           class="header-nav"
@@ -41,7 +41,7 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> -->
       </div>
     </div>
   </header>

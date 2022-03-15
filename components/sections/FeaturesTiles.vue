@@ -27,12 +27,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/frontend.svg')"
                     alt="Feature tile icon 01"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -50,12 +50,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/backend.svg')"
                     alt="Feature tile icon 02"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -73,12 +73,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/process.svg')"
                     alt="Feature tile icon 03"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -96,12 +96,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/security.svg')"
                     alt="Feature tile icon 04"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -119,12 +119,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/team.svg')"
                     alt="Feature tile icon 05"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -142,12 +142,12 @@
             <div class="tiles-item-inner">
               <div class="features-tiles-item-header">
                 <div class="features-tiles-item-image mb-16">
-                  <c-image
+                  <img
                     :src="require('@/assets/images/split/creative.svg')"
                     alt="Feature tile icon 06"
                     :width="208"
                     :height="208"
-                  />
+                  >
                 </div>
               </div>
               <div class="features-tiles-item-content">
@@ -169,13 +169,11 @@
 <script>
 import { SectionTilesProps } from '@/utils/SectionProps.js'
 import CSectionHeader from '@/components/sections/partials/SectionHeader.vue'
-import CImage from '@/components/elements/Image.vue'
 
 export default {
   name: 'CFeaturesTiles',
   components: {
-    CSectionHeader,
-    CImage
+    CSectionHeader
   },
   mixins: [SectionTilesProps],
   data () {
