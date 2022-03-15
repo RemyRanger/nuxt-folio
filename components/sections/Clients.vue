@@ -18,44 +18,44 @@
       >
         <ul class="list-reset">
           <li class="reveal-from-bottom">
-            <c-image
+            <img
               :src="require('@/assets/images/tech/vuejs.png')"
               alt="Client 01"
               :width="124"
               :height="24"
-            />
+            >
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="150">
-            <c-image
+            <img
               :src="require('@/assets/images/tech/golang.png')"
               alt="Client 02"
               :width="124"
               :height="24"
-            />
+            >
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="300">
-            <c-image
+            <img
               :src="require('@/assets/images/tech/openapi.png')"
               alt="Client 03"
               :width="124"
               :height="24"
-            />
+            >
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="450">
-            <c-image
+            <img
               :src="require('@/assets/images/tech/postgres.png')"
               alt="Client 04"
               :width="124"
               :height="24"
-            />
+            >
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="600">
-            <c-image
+            <img
               :src="require('@/assets/images/tech/git.png')"
               alt="Client 05"
               :width="124"
               :height="24"
-            />
+            >
           </li>
         </ul>
       </div>
@@ -65,13 +65,9 @@
 
 <script>
 import { SectionProps } from '@/utils/SectionProps.js'
-import CImage from '@/components/elements/Image.vue'
 
 export default {
   name: 'CClients',
-  components: {
-    CImage
-  },
   mixins: [SectionProps]
 }
 </script>
