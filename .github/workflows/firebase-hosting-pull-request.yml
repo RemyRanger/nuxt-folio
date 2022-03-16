@@ -5,7 +5,6 @@ name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
   ci:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -18,7 +17,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup node env 🏗
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node }}
           check-latest: true
