@@ -18,26 +18,26 @@
       >
         <c-section-header :data="sectionHeader" class="center-content" />
         <c-timeline>
-          <c-timeline-item title="Décembre 2020">
-            Cadre De Vie - Data provider startup
+          <c-timeline-item title="Dec 2020 - Present">
+            🏛️ Cadre De Vie - Data provider startup
           </c-timeline-item>
-          <c-timeline-item title="Avril 2020">
-            Taktyl - Mobile App for events
+          <c-timeline-item title="Mar 2020 - Jul 2020">
+            🎟️ Taktyl - Mobile App for events
           </c-timeline-item>
-          <c-timeline-item title="Janvier 2020">
-            HomePlus - HeathCare Services
+          <c-timeline-item title="Jan 2020 - Dec 2020">
+            🧑🏼‍⚕️ HomePlus - HeathCare Services
           </c-timeline-item>
-          <c-timeline-item title="Mars 2019">
-            Olympe - Voice drived interface
+          <c-timeline-item title="Jan 2019 - Jan 2020">
+            🎤 Olympe - Voice drived interface
           </c-timeline-item>
-          <c-timeline-item title="Septembre 2018">
-            Ci5 - Cargo Intelligent System
+          <c-timeline-item title="Sep 2018 - Jan 2020">
+            ⚓ Ci5 - Cargo Intelligent System
           </c-timeline-item>
-          <c-timeline-item title="Aout 2018">
-            Graduated Telecom Engineer from ENSEIRB-MATMECA
+          <c-timeline-item title="Aug 2018">
+            👑 Graduated Telecom Engineer from ENSEIRB-MATMECA
           </c-timeline-item>
-          <c-timeline-item title="Janvier 2018">
-            SICS - Battle Management System (internship)
+          <c-timeline-item title="Jan 2018 - Aug 2018">
+            ⚔️ SICS - Battle Management System (internship)
           </c-timeline-item>
         </c-timeline>
       </div>
