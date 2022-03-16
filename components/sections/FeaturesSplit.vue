@@ -50,7 +50,7 @@
               :class="imageFill && 'split-item-image-fill'"
             >
               <img
-                :src="require('@/assets/images/project/cadredevie.png')"
+                :src="require('@/assets/images/project/cadredevie.jpg')"
                 class="has-shadow"
                 alt="Features split image 01"
                 :width="328"
@@ -84,7 +84,7 @@
               :class="imageFill && 'split-item-image-fill'"
             >
               <img
-                :src="require('@/assets/images/project/taktyl.png')"
+                :src="require('@/assets/images/project/taktyl.jpg')"
                 class="has-shadow"
                 alt="Features split image 02"
                 :width="528"
@@ -130,7 +130,7 @@
               :class="imageFill && 'split-item-image-fill'"
             >
               <img
-                :src="require('@/assets/images/project/homeplus.png')"
+                :src="require('@/assets/images/project/homeplus.jpg')"
                 class="has-shadow"
                 alt="Features split image 03"
                 :width="528"
@@ -167,7 +167,7 @@
               :class="imageFill && 'split-item-image-fill'"
             >
               <img
-                :src="require('@/assets/images/project/olympe.png')"
+                :src="require('@/assets/images/project/olympe.jpg')"
                 class="has-shadow"
                 alt="Features split image 02"
                 :width="528"
@@ -210,7 +210,7 @@
               :class="imageFill && 'split-item-image-fill'"
             >
               <img
-                :src="require('@/assets/images/project/ci5.png')"
+                :src="require('@/assets/images/project/ci5.jpg')"
                 class="has-shadow"
                 alt="Features split image 03"
                 :width="528"

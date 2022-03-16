@@ -26,7 +26,7 @@
               A fullstack software Engineer.
             </p>
           </div>
-          <div>
+          <div class="reveal-from-top" data-reveal-delay="400">
             <a href="https://www.linkedin.com/in/r%C3%A9my-ranger-94b81a134/">
               <svg
                 width="40"
