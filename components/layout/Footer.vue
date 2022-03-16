@@ -8,7 +8,7 @@
         </div>
         <div class="footer-bottom space-between text-xxs invert-order-desktop">
           <div class="footer-copyright">
-            &copy; 2020 Evelyn, all rights reserved
+            &copy; 2022 Rémy Ranger, all rights reserved
           </div>
         </div>
       </div>

@@ -86,7 +86,7 @@
                   Workflow
                 </h4>
                 <p class="m-0 text-sm">
-                  CI/CD interrested, i'm looking for the best suitable workflow for code release and safe auto-deployment. I'm gitlab lover, scripting and working with pipeline for years !
+                  CI/CD interrested, i'm looking for the best suitable workflow for code release and safe auto-deployment. I'm a gitlab lover, scripting and working with pipelines for years !
                 </p>
               </div>
             </div>
@@ -132,7 +132,7 @@
                   Team leader
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  Enjoyed being technical leader and scrum master in many projects. I like to teach and share skills to keep teams on board. I'm working with SCRUM principles since my graduation in 2018.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@
                   Creative Minded
                 </h4>
                 <p class="m-0 text-sm">
-                  A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise layouts for previewing layouts.
+                  I'm learning everyday from everywhere. Keeping skills updated is one of the hardest task for developers, things are changing so fast. Reading article is a part of the job, for sure !
                 </p>
               </div>
             </div>
