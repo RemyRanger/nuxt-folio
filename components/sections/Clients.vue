@@ -19,7 +19,7 @@
         <ul class="list-reset">
           <li class="reveal-from-bottom">
             <img
-              :src="require('@/assets/images/tech/vuejs.png')"
+              :src="require('@/assets/images/tech/vuejs.jpg')"
               alt="Client 01"
               :width="124"
               :height="24"
@@ -27,7 +27,7 @@
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="150">
             <img
-              :src="require('@/assets/images/tech/golang.png')"
+              :src="require('@/assets/images/tech/golang.jpg')"
               alt="Client 02"
               :width="124"
               :height="24"
@@ -35,7 +35,7 @@
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="300">
             <img
-              :src="require('@/assets/images/tech/openapi.png')"
+              :src="require('@/assets/images/tech/openapi.jpg')"
               alt="Client 03"
               :width="124"
               :height="24"
@@ -43,7 +43,7 @@
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="450">
             <img
-              :src="require('@/assets/images/tech/postgres.png')"
+              :src="require('@/assets/images/tech/postgres.jpg')"
               alt="Client 04"
               :width="124"
               :height="24"
@@ -51,7 +51,7 @@
           </li>
           <li class="reveal-from-bottom" data-reveal-delay="600">
             <img
-              :src="require('@/assets/images/tech/git.png')"
+              :src="require('@/assets/images/tech/git.jpg')"
               alt="Client 05"
               :width="124"
               :height="24"
