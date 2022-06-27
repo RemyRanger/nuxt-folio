@@ -27,7 +27,7 @@
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-vue": "^8.5.0",
     "node-sass": "^4.12.0",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^13.0.1",
     "vue-fragment": "^1.5.1",
     "vue2-touch-events": "^3.2.2"
   },
