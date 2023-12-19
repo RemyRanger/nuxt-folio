@@ -1,45 +1,47 @@
-export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+import { defineNuxtConfig } from 'nuxt/config'
+import eslintPlugin from 'vite-plugin-eslint'
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'remy-ranger',
-    htmlAttrs: {
-      lang: 'fr'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'hi, i\'m rémy' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+/* const { CI_PAGES_URL } = process.env
+const base = CI_PAGES_URL && new URL(CI_PAGES_URL).pathname */
+
+export default defineNuxtConfig({
+  modules: [
+    '@nuxtjs/tailwindcss',
+    ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }]
+  ],
+
+  sitemap: {
+    hostname: 'https://remy-ranger.raveon.fr/'
+  },
+
+  vite: {
+    plugins: [
+      eslintPlugin()
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/scss/style.scss'],
+  /* router: {
+    base
+  }, */
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/vue-plugins.js', mode: 'client' }],
+  app: {
+    /* baseURL: base, */
+    head: {
+      title: 'Rémy Ranger - Software Engineer',
+      htmlAttrs: {
+        lang: 'fr'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Rémy Ranger - Software Engineer' },
+        { name: 'format-detection', content: 'telephone=no' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    transpile: ['vue-fragment', 'vue2-touch-events']
-  }
-}
+  css: ['~/assets/css/style.css']
+})

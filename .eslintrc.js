@@ -1,23 +1,27 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
+    es2021: true,
     node: true
   },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
-  },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/recommended',
+    '@nuxtjs/eslint-config-typescript'
   ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
+  },
   plugins: [
+    'vue',
+    '@typescript-eslint'
   ],
-  // add your custom rules here
   rules: {
-    'vue/require-default-prop': 'off',
-    'vue/no-v-html': 'off',
-    'vue/require-prop-types': 'off'
+    'vue/multi-word-component-names': 'off',
+    'vue/no-reserved-component-names': 'off',
+    'vue/no-v-for-template-key': 'off'
   }
 }

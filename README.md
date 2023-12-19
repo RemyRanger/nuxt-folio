@@ -1,4 +1,4 @@
-# nuxt-folio
+# website
 
 ## Build Setup
 
@@ -12,9 +12,6 @@ $ yarn dev
 # build for production and launch server
 $ yarn build
 $ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
