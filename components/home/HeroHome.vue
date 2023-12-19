@@ -38,7 +38,8 @@
               data-aos="fade-down"
               data-aos-delay="150"
             >
-              Fullstack Software Engineer
+              Graduated from 'Institut National Polytechnique' of Bordeaux (France), i'm used to work with many tools and technologies.
+              From eavy client developed in Java to ultra-fast web app build in Golang, my experience is based on {{ new Date().getFullYear() - 2017 }} years of professional development.
             </p>
             <!-- Social links -->
             <div class="inline-flex mt-4 md:order-2">
