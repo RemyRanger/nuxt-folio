@@ -1,13 +1,14 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import eslintPlugin from 'vite-plugin-eslint'
 
-/* const { CI_PAGES_URL } = process.env
-const base = CI_PAGES_URL && new URL(CI_PAGES_URL).pathname */
-
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     ['@funken-studio/sitemap-nuxt-3', { generateOnBuild: true }]
+  ],
+
+  components: [
+    'node_modules/@ipaat/vue3-tailwind3-cookie-comply'
   ],
 
   sitemap: {
@@ -20,28 +21,25 @@ export default defineNuxtConfig({
     ]
   },
 
-  /* router: {
-    base
-  }, */
-
   app: {
     /* baseURL: base, */
     head: {
-      title: 'Rémy Ranger - Fullstack Software Engineer',
+      title: 'Rémy Ranger | Software Developer',
       htmlAttrs: {
         lang: 'fr'
       },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Rémy Ranger - Software Engineer' },
+        { hid: 'description', name: 'description', content: 'Rémy Ranger | Software Developer' },
         { name: 'format-detection', content: 'telephone=no' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' }
       ]
     }
   },
 
-  css: ['~/assets/css/style.css']
+  css: ['~/assets/css/style.css', 'aos/dist/aos.css'],
+  compatibilityDate: '2025-07-13'
 })

@@ -1,0 +1,6 @@
+# Allow all crawlers
+User-agent: *
+Disallow:
+
+# Point to your sitemap
+Sitemap: https://remy-ranger.raveon.fr/sitemap.xml

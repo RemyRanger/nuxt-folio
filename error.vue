@@ -1,15 +1,10 @@
 <template>
-  <div class="flex flex-col min-h-screen overflow-hidden">
+  <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight min-h-screen ">
     <!-- Site header -->
     <Header />
 
     <!-- Page content -->
     <main class="grow">
-      <!-- Page illustration -->
-      <div class="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
-        <PageIllustration />
-      </div>
-
       <section class="relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
           <div class="pt-32 pb-12 md:pt-40 md:pb-20">
@@ -22,7 +17,7 @@
                   :width="1068"
                   :height="732"
                 >
-                <div class="hidden sm:block absolute inset-0 bg-gradient-to-t from-white dark:from-gray-900" aria-hidden="true" />
+                <div class="hidden sm:block absolute inset-0" aria-hidden="true" />
                 <div class="sm:absolute w-full">
                   <h1 class="h3 font-red-hat-display mb-8">
                     La page que vous cherchez n'existe pas.
@@ -51,14 +46,12 @@ import 'aos/dist/aos.css'
 import AOS from 'aos'
 
 import Header from '@/components/Header.vue'
-import PageIllustration from '@/components/PageIllustration.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Error',
   components: {
     Header,
-    PageIllustration,
     Footer
   },
   mounted () {
