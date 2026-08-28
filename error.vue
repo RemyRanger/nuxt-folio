@@ -1,8 +1,5 @@
 <template>
   <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight min-h-screen ">
-    <!-- Site header -->
-    <Header />
-
     <!-- Page content -->
     <main class="grow">
       <section class="relative">
@@ -20,10 +17,10 @@
                 <div class="hidden sm:block absolute inset-0" aria-hidden="true" />
                 <div class="sm:absolute w-full">
                   <h1 class="h3 font-red-hat-display mb-8">
-                    La page que vous cherchez n'existe pas.
+                    The page that your looking for doesn't exist.
                   </h1>
                   <router-link class="btn text-white bg-teal-500 hover:bg-teal-400 inline-flex items-center" to="/">
-                    <span>Retour</span>
+                    <span>Back</span>
                     <svg class="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path class="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
                     </svg>
@@ -45,13 +42,11 @@
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 
-import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Error',
   components: {
-    Header,
     Footer
   },
   mounted () {
