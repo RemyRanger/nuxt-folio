@@ -1,5 +1,5 @@
 <template>
-  <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight min-h-screen ">
+  <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight min-h-screen">
     <!-- Page content -->
     <main class="grow">
       <section class="relative">
@@ -10,21 +10,31 @@
                 <img
                   class="sm:block opacity-80 md:opacity-80"
                   src="/404.svg"
-                  alt="404"
-                  :width="1068"
-                  :height="732"
+                  alt=""
+                  width="1068"
+                  height="732"
                 >
-                <div class="hidden sm:block absolute inset-0" aria-hidden="true" />
                 <div class="sm:absolute w-full">
-                  <h1 class="h3 font-red-hat-display mb-8">
-                    The page that your looking for doesn't exist.
+                  <h1 class="h3 mb-8">
+                    {{ message }}
                   </h1>
-                  <router-link class="btn text-white bg-teal-500 hover:bg-teal-400 inline-flex items-center" to="/">
+                  <NuxtLink
+                    class="btn text-white bg-teal-500 hover:bg-teal-400"
+                    to="/"
+                  >
                     <span>Back</span>
-                    <svg class="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path class="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
+                    <svg
+                      class="w-3 h-3 shrink-0 mt-px ml-2"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        class="fill-current"
+                        d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z"
+                      />
                     </svg>
-                  </router-link>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -38,24 +48,12 @@
   </div>
 </template>
 
-<script>
-import 'aos/dist/aos.css'
-import AOS from 'aos'
+<script setup>
+const props = defineProps({
+  error: { type: Object, default: null }
+})
 
-import Footer from '@/components/Footer.vue'
-
-export default {
-  name: 'Error',
-  components: {
-    Footer
-  },
-  mounted () {
-    AOS.init({
-      once: true,
-      disable: 'phone',
-      duration: 600,
-      easing: 'ease-out-sine'
-    })
-  }
-}
+const message = props.error?.statusCode === 404
+  ? 'The page you\'re looking for doesn\'t exist.'
+  : 'Something went wrong.'
 </script>

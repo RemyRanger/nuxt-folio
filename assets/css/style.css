@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=fallback');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
@@ -7,18 +6,6 @@
 @import 'additional-styles/theme.css';
 
 @import 'tailwindcss/utilities';
-
-/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
-@layer utilities {
-    .rtl {
-        direction: rtl;
-    }
-}
-
-.vue-notification {
-  color: black !important;
-  font-size: 17px !important;
-}
 
 @layer base {
   html {

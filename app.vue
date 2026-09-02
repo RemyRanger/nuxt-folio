@@ -1,25 +1,22 @@
 <template>
-  <ClientOnly>
-    <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight">
-      <!-- Markup shared across all pages, ex: NavBar -->
-      <NuxtPage />
-      <notifications
-        position="bottom right"
-        :duration="4000"
-      />
+  <div class="font-inter antialiased bg-slate-900 text-slate-100 tracking-tight">
+    <!-- Markup shared across all pages, ex: NavBar -->
+    <NuxtPage />
+    <ClientOnly>
       <VueCookieComply
         :preferences="preferences"
         :banner-background-color="['bg-gray-200', 'dark:bg-gray-800', 'z-20']"
-        @on-accept-all="onAccept"
+        @on-accept-all="enableAnalytics"
         @on-save-preferences="onSavePreferences"
       />
-    </div>
-  </ClientOnly>
+    </ClientOnly>
+  </div>
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import VueCookieComply from '@ipaat/vue3-tailwind3-cookie-comply'
-import { setConsent } from 'firebase/analytics'
+import { ANALYTICS_PREFERENCE, enableAnalytics, hasStoredAnalyticsConsent } from '~/utils/analytics'
 
 const preferences = [
   {
@@ -28,23 +25,22 @@ const preferences = [
     items: [
       {
         label: 'Google Analytics',
-        value: 'g-analytics'
+        value: ANALYTICS_PREFERENCE
       }
     ]
   }
 ]
 
-const onAccept = () => {
-  setConsent({
-    analytics_storage: 'granted'
-  })
-}
-
 const onSavePreferences = (accepted) => {
-  if (accepted[0] === 'g-analytics') {
-    setConsent({
-      analytics_storage: 'granted'
-    })
+  if (accepted?.includes(ANALYTICS_PREFERENCE)) {
+    enableAnalytics()
   }
 }
+
+// Returning visitors who already opted in never see the banner again.
+onMounted(() => {
+  if (hasStoredAnalyticsConsent()) {
+    enableAnalytics()
+  }
+})
 </script>
